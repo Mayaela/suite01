@@ -12,6 +12,14 @@
 
 //  écrire votre code sous ce commentaire
 
+function getCharAt(str, indice) {
+    let result = '';
+    if (indice < str.length || indice >= 0) {
+        result = str[indice];
+    }
+    return(result);
+}
+
 /*
   Test 1
   Résultat attendu : "j"

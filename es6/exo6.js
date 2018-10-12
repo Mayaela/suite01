@@ -10,6 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+    const getTwoLastItems = (str, separ) => {
+        let tab = str.split(separ);
+        return([ tab[tab.length-2], tab[tab.length-1] ]);
+    }
 
 /*
   Test 1

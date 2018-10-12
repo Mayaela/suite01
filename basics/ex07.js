@@ -6,7 +6,13 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function boostedAddition (arr) {
+    let sommeNbs = 0;
+    for(let i=0 ; i < arr.length ; i++) {
+        sommeNbs += arr[i];
+    }
+    console.log(sommeNbs);
+}
 /*
   Test 1
   Résultat attendu : 15

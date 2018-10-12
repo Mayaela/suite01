@@ -11,6 +11,23 @@
 
 //  écrire votre code sous ce commentaire
 
+    const findYellowFruit = (arr) => {
+        /*let fruit = '';
+        for(let i=0; i<arr.length; i++) {
+            if(arr[i].color ==='jaune'){
+                fruit = arr[i].name;
+                break;
+            }
+        }
+        return(fruit);*/
+        let fruitJaune = '';
+        arr.find(fruit => {
+            if(fruit.color === 'jaune') {
+                fruitJaune = fruit.name;
+            }
+        })
+        return(fruitJaune);
+    }
 /*
   Test 1
   Résultat attendu : "banane"

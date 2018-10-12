@@ -13,6 +13,28 @@
 
 //  écrire votre code sous ce commentaire
 
+function shoppingList (tabPaniers) {
+    
+    panier = tabPaniers[0].concat(tabPaniers[1]).concat(tabPaniers[2]).concat(tabPaniers[3]).concat(tabPaniers[4]);
+
+    const tabOrange = panier.filter(word => word === 'orange');
+    const tabKiwi = panier.filter(word => word === 'kiwi');
+    const tabPrune = panier.filter(word => word === 'prune');
+    const tabAnanas = panier.filter(word => word === 'ananas');
+    const tabBanane = panier.filter(word => word === 'banane');
+    const tabPamplemousse = panier.filter(word => word === 'pamplemousse');
+
+    const panierObjet = {
+        'orange': tabOrange.length,
+        'kiwi' : tabKiwi.length,
+        'ananas' : tabAnanas.length,
+        'prune' : tabPrune.length,
+        'banane' : tabBanane.length,
+        'pamplemousse' : tabPamplemousse.length
+    }
+    console.log(panierObjet);
+}
+
 /*
   Test 1
   Résultat attendu : {

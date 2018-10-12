@@ -11,7 +11,8 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+    const checkVehicles = (arr, str) =>
+        console.log(arr.includes(str));
 /*
   Test 1
   Résultat attendu : true

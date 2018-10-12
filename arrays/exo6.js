@@ -10,6 +10,23 @@
 
 //  écrire votre code sous ce commentaire
 
+function sortNumbers (arr) {
+    let isSorted = false;
+    while (isSorted === false) {
+        isSorted = true ;
+        for (let i = 1; i < arr.length ; i++) {
+            if (arr[i] < arr[i-1]) {
+                const valMin = arr[i];
+                const valMax = arr[i-1];
+                arr[i-1] = valMin;
+                arr[i] = valMax;
+                isSorted = false;
+            }
+        }
+    }
+    return(arr);
+}
+
 /*
   Test 1
   Résultat attendu : [2, 3, 4, 5]

@@ -9,6 +9,14 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEven (nb) {
+    let reponse = 0;
+    if (nb % 2 === 0) {
+        reponse = 1;
+    }
+    return(reponse);
+}
+
 /*
   Test 1
   Résultat attendu : 1

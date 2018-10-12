@@ -9,6 +9,12 @@
 
 //  écrire votre code sous ce commentaire
 
+function editArrayAt (arr, indiceModif, newValeur) {
+    
+    arr[indiceModif] = newValeur;
+    return(arr);
+}
+
 /*
   Test 1
   Résultat attendu : ["bonjour", "ça", 5]

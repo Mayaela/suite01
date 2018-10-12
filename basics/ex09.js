@@ -7,6 +7,20 @@
 
 //  écrire votre code sous ce commentaire
 
+
+function boostedEvenAddition (arr) {
+    let sommePair = 0;
+
+    for (let i = 0; i < arr.length ; i++) {
+        if (arr[i] % 2 === 0) {
+            sommePair += arr[i];
+        };
+    };
+
+    console.log(sommePair);
+    
+};
+
 /*
   Test 1
   Résultat attendu : 10

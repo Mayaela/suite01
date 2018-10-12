@@ -10,6 +10,8 @@
 */
 
 //  écrire votre code sous ce commentaire
+    const filterEvenNumbers = (arr) =>
+        arr.filter(value => (value % 2 === 0));
 
 /*
   Test 1

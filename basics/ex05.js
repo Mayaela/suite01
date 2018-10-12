@@ -9,6 +9,16 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEvenConcat (nb) {
+    let reponse = '';
+    if (nb % 2 === 0) {
+        reponse = `${nb} est pair`;
+    } else {
+        reponse = `${nb} est impair`;
+    }
+    console.log(reponse);
+}
+
 /*
   Test 1
   Résultat attendu : "6 est pair"

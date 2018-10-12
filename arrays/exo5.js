@@ -12,7 +12,15 @@
 */
 
 //  écrire votre code sous ce commentaire
-const mergeArrays = (arr1, arr2) => [...arr1, ...arr2]
+
+const mergeArrays = (arr1, arr2) => {
+    arr3 = [...arr1,...arr2];
+    return(arr3);
+}
+
+
+
+
 
 /*
   Test 1

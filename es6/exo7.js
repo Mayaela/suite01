@@ -11,6 +11,9 @@
 
 //  écrire votre code sous ce commentaire
 
+    const joinDates = (arr, separ) =>
+        arr.join(separ);
+
 /*
   Test 1
   Résultat attendu : "18/05/2018"

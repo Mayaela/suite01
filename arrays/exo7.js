@@ -12,6 +12,20 @@
 
 //  écrire votre code sous ce commentaire
 
+function splitStr (str, separ) {
+    const tab = [];
+    let valeur = '';
+    for(let i=0; i <=str.length; i++) {
+        if(str[i]===separ || str[i]===undefined ) {
+            tab.push(valeur);
+            valeur = '';
+        } else {
+            valeur += str[i];
+        }
+    }
+    return(tab);
+}
+
 /*
   Test 1
   Résultat attendu : ["Bonjour", "comment", "tu", "vas", "?", "ça", "va", "merci."]

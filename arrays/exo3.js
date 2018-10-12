@@ -9,6 +9,13 @@
 
 //  écrire votre code sous ce commentaire
 
+function editStringAt(str, indiceModif, valeurModif) {
+    strModif = str.split('');
+    strModif[indiceModif] = valeurModif;
+    strModif = strModif.join('');
+    return(strModif);
+}
+
 /*
   Test 1
   Résultat attendu : "Bondour"

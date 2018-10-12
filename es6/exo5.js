@@ -10,7 +10,13 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+const countTotalTimeSpent = (arr) => {
+    let total = 0;
+    arr.map(eleve => 
+        total = total + eleve.time
+    );
+    return(total);
+}
 /*
   Test 1
   Résultat attendu : 65

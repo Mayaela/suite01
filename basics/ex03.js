@@ -13,6 +13,11 @@
 
 //  écrire votre code sous ce commentaire
 
+function addition (nb1, nb2) {
+    const somme = nb1 + nb2;
+    return(somme);
+}
+
 /*
   Test 1
   Résultat attendu : 15

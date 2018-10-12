@@ -15,6 +15,24 @@
 
 //  écrire votre code sous ce commentaire
 
+function isAllEven (arr) {
+    function isEven (nb) {
+            let reponse = 1;
+            if (nb % 2 !== 0) {
+                reponse = 0;
+            }
+            return(reponse);
+        };
+    for (let i = 0; i < arr.length ; i++) {
+        reponseFin = isEven(arr[i]);
+        if (reponseFin === 0) {
+            break;
+        }
+    };
+    return(reponseFin);
+    
+};
+
 /*
   Test 1
   Résultat attendu : 0
@@ -28,6 +46,7 @@ isAllEven([4, 5, 6]);
 */
 
 isAllEven([4, 4, 6, 8, 10, 12]);
+
 
 /* DO NOT TOUCH */
 module.exports = {

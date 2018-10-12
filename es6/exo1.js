@@ -11,6 +11,9 @@
 
 //  écrire votre code sous ce commentaire
 
+const getAllLastnames = (arr) => 
+    arr.map(objet => ((objet.name === undefined) ? '' :`${objet.name}`));
+
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]
